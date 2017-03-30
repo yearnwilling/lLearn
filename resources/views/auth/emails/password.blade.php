@@ -1,1 +1,5 @@
-Click here to reset your password: <a href="{{ $link = url('password/reset', $token).'?email='.urlencode($user->getEmailForPasswordReset()) }}"> {{ $link }} </a>
+<p>点击下面链接重置密码：</p>
+
+<a href="{{ route('password.update') . '/' . $token }}">
+    {{ route('password.update') . '/' . $token }}
+</a>
